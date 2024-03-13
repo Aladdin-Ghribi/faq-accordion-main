@@ -1,1 +1,56 @@
-/*# sourceMappingURL=style.css.map */
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Work Sans", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: -130px;
+}
+
+.card {
+  max-width: 515px;
+  background-color: hsl(275, 100%, 97%);
+  border-radius: 13px;
+  padding: 30px;
+}
+.card .header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.card .header h1 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: hsl(292, 42%, 14%);
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: hsl(292, 42%, 14%);
+  gap: 35px;
+}
+
+.accordion-body {
+  color: hsl(292, 16%, 49%);
+  font-size: 14px;
+  display: none;
+  height: 0px;
+  transition: display 0.3s, height 0.3s;
+}
+
+.toggle {
+  cursor: pointer;
+}
+
+.show {
+  display: block;
+  height: auto;
+}/*# sourceMappingURL=style.css.map */

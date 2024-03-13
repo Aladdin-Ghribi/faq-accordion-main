@@ -1,0 +1,64 @@
+//colors
+$primary-color:hsl(292, 16%, 49%);
+$darker-primary-color:hsl(292, 42%, 14%);
+$light-color: hsl(0, 0%, 100%);
+$secondy-color:hsl(275, 100%, 97%);
+
+//font-family
+$primary-font:"Work Sans", sans-serif;
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: $primary-font
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+     margin-top: -130px;
+
+}
+.card{
+    max-width: 515px;
+    background-color: $secondy-color;
+    border-radius: 13px;
+    padding: 30px;
+
+    .header{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin-bottom: 30px;
+        h1{
+            font-weight: bold;
+            font-size: 2.5rem;
+            color: $darker-primary-color;
+        }
+    }
+}
+.accordion-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: $darker-primary-color;
+    gap: 35px   ;
+}
+.accordion-body{
+    color: $primary-color;
+    font-size: 14px;
+    display: none;
+    height: 0px;
+    transition: display 0.3s,height 0.3s;
+
+}
+.toggle{
+    cursor: pointer;
+}
+.show{
+    display: block ;
+    height: auto;
+}
